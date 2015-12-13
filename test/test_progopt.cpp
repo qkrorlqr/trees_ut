@@ -6,13 +6,14 @@
  */
 
 #include "gtest/gtest.h"
-#include "util/progopt.h"
+
+#include <util/progopt.h>
 
 using namespace NUtil;
 
 namespace {
-    const int ARGC = 2;
-    const char* ARGV[] = {"-c", "foo"};
+    const int ARGC = 7;
+    const char* ARGV[] = {"binname", "-c", "foo", "unnamed1", "unnamed2", "-x", "something"};
 }
 
 TEST(TestHas, positive) {
